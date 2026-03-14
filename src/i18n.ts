@@ -25,7 +25,7 @@ export const useTranslate = () => {
     /**
      * The translation key should be a valid key (containing valid strings separated with a dot). If the key is not found on the currently selected locale the fallback if provided will be returned, otherwise the key will be returned instead
      */
-    return (translationKey: string, fallback: string) => {
+    return (translationKey: string, fallback?: string) => {
         const parts = translationKey.split(I18N_TRANSLATION_KEY_SEPARATOR);
         let translated: string | undefined = undefined;
         let lastObj = i18nContext.locale;
