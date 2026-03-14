@@ -1,7 +1,7 @@
 import { createContext, useContext } from 'react';
 
 //Note that whatever is used as separator will not be supported as part of a key
-const TRANSLATION_KEY_SEPARATOR = '.';
+export const I18N_TRANSLATION_KEY_SEPARATOR = '.';
 export type LocaleData = {
     [key: string]: string | LocaleData
 }
@@ -26,7 +26,7 @@ export const useTranslate = () => {
      * The translation key should be a valid key (containing valid strings separated with a dot). If the key is not found on the currently selected locale the fallback if provided will be returned, otherwise the key will be returned instead
      */
     return (translationKey: string, fallback: string) => {
-        const parts = translationKey.split(TRANSLATION_KEY_SEPARATOR);
+        const parts = translationKey.split(I18N_TRANSLATION_KEY_SEPARATOR);
         let translated: string | undefined = undefined;
         let lastObj = i18nContext.locale;
         for (let key of parts) {
@@ -48,4 +48,10 @@ export const useTranslate = () => {
 
         }
     }
+}
+
+export default {
+    I18nContext,
+    useTranslate,
+    I18N_TRANSLATION_KEY_SEPARATOR
 }

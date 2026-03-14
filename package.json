@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "packageManager": "yarn@4.6.0",
   "license": "MIT",
-  "main": "bin/i18n.js",
+  "main": "src/i18n.ts",
   "scripts":{
     "build": "tsc"
   },
