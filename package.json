@@ -1,0 +1,17 @@
+{
+  "name": "@axc/i18n",
+  "version": "1.0.0",
+  "packageManager": "yarn@4.6.0",
+  "license": "MIT",
+  "main": "bin/i18n.js",
+  "scripts":{
+    "build": "tsc"
+  },
+  "dependencies": {
+    "react": "^19.2.4",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19"
+  }
+}
