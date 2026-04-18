@@ -1,17 +1,18 @@
 {
   "name": "@axc/i18n",
   "version": "1.0.0",
-  "packageManager": "yarn@4.6.0",
+  "packageManager": "yarn@4.14.1",
   "license": "MIT",
   "main": "src/i18n.ts",
-  "scripts":{
+  "scripts": {
     "build": "tsc"
   },
-  "dependencies": {
-    "react": "^19.2.4",
-    "typescript": "^5.9.3"
+  "peerDependencies": {
+    "react": "19.2.5"
   },
   "devDependencies": {
-    "@types/react": "^19"
+    "@types/react": "19.2.14",
+    "react": "19.2.5",
+    "typescript": "^6.0.3"
   }
 }

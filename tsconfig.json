@@ -6,8 +6,7 @@
     "moduleResolution": "classic",
     "skipLibCheck": true,                   
     "esModuleInterop": true,
-    "outDir": "bin",               
-    //No thanks
+    "outDir": "bin",              
     "experimentalDecorators": false,        
     "emitDecoratorMetadata": false,       
     "declaration": true
