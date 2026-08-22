@@ -2,7 +2,12 @@
 
 A simple 50 LOC I18n library that only depends on react
 
-## usage
+## Usage
+
+### Installing
+```
+  yarn add @axc/i18n
+```
 
 ### Defining the context
 ```
